@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Home_NewsInfoViewController" customModule="NetWorkClass" customModuleProvider="target">
+            <connections>
+                <outlet property="NewsTime" destination="GPF-0K-OaN" id="05D-d0-JaX"/>
+                <outlet property="Newstitle" destination="6hA-TK-r5H" id="Rld-1e-ViY"/>
+                <outlet property="scrollcontentView_H" destination="94G-pz-mUR" id="Unb-4q-M1K"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6Q-cA-ehX">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Q9-GU-bp2">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="820"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="淄博" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hA-TK-r5H">
+                                    <rect key="frame" x="15" y="15" width="345" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="淄博!2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPF-0K-OaN">
+                                    <rect key="frame" x="15" y="48" width="345" height="13.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOL-NW-l0r">
+                                    <rect key="frame" x="0.0" y="66.5" width="375" height="1"/>
+                                    <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="0.5" id="3L5-n9-7OB"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="GPF-0K-OaN" firstAttribute="leading" secondItem="6hA-TK-r5H" secondAttribute="leading" id="32S-71-vYl"/>
+                                <constraint firstAttribute="height" constant="820" id="94G-pz-mUR"/>
+                                <constraint firstItem="6hA-TK-r5H" firstAttribute="leading" secondItem="9Q9-GU-bp2" secondAttribute="leading" constant="15" id="IyV-Bm-8Gh"/>
+                                <constraint firstItem="JOL-NW-l0r" firstAttribute="top" secondItem="GPF-0K-OaN" secondAttribute="bottom" constant="5" id="MXI-MA-Cxr"/>
+                                <constraint firstItem="JOL-NW-l0r" firstAttribute="leading" secondItem="9Q9-GU-bp2" secondAttribute="leading" id="OUU-vJ-S9R"/>
+                                <constraint firstAttribute="trailing" secondItem="JOL-NW-l0r" secondAttribute="trailing" id="ldC-wp-SaT"/>
+                                <constraint firstItem="GPF-0K-OaN" firstAttribute="top" secondItem="6hA-TK-r5H" secondAttribute="bottom" constant="15" id="lsK-tD-Nh0"/>
+                                <constraint firstItem="6hA-TK-r5H" firstAttribute="top" secondItem="9Q9-GU-bp2" secondAttribute="top" constant="15" id="mwT-L9-fJi"/>
+                                <constraint firstAttribute="trailing" secondItem="GPF-0K-OaN" secondAttribute="trailing" constant="15" id="oUN-AY-Ahf"/>
+                                <constraint firstAttribute="trailing" secondItem="6hA-TK-r5H" secondAttribute="trailing" constant="15" id="pKk-gs-WOs"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="9Q9-GU-bp2" firstAttribute="leading" secondItem="H6Q-cA-ehX" secondAttribute="leading" id="IHV-2z-RtH"/>
+                        <constraint firstAttribute="bottom" secondItem="9Q9-GU-bp2" secondAttribute="bottom" id="Mnt-sQ-BQX"/>
+                        <constraint firstAttribute="trailing" secondItem="9Q9-GU-bp2" secondAttribute="trailing" id="Oio-WR-KrX"/>
+                        <constraint firstItem="9Q9-GU-bp2" firstAttribute="centerX" secondItem="H6Q-cA-ehX" secondAttribute="centerX" id="WYV-aO-dsC"/>
+                        <constraint firstItem="9Q9-GU-bp2" firstAttribute="top" secondItem="H6Q-cA-ehX" secondAttribute="top" id="wRF-O3-dFE"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="H6Q-cA-ehX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1qO-h5-ZzR"/>
+                <constraint firstItem="H6Q-cA-ehX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Lv0-wq-9kh"/>
+                <constraint firstAttribute="trailing" secondItem="H6Q-cA-ehX" secondAttribute="trailing" id="QvW-oj-lue"/>
+                <constraint firstAttribute="bottom" secondItem="H6Q-cA-ehX" secondAttribute="bottom" id="ye6-FK-Q1S"/>
+            </constraints>
+            <point key="canvasLocation" x="-945.5" y="184.5"/>
+        </view>
+    </objects>
+</document>

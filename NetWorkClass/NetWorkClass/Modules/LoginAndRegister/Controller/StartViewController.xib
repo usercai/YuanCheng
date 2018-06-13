@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartViewController" customModule="NetWorkClass" customModuleProvider="target">
+            <connections>
+                <outlet property="startimage" destination="shF-sp-9b7" id="py6-db-XJu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLaunch1" translatesAutoresizingMaskIntoConstraints="NO" id="shF-sp-9b7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="shF-sp-9b7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1wV-jX-u0q"/>
+                <constraint firstAttribute="bottom" secondItem="shF-sp-9b7" secondAttribute="bottom" id="GG0-wG-y5r"/>
+                <constraint firstAttribute="trailing" secondItem="shF-sp-9b7" secondAttribute="trailing" id="Hia-kg-Hcg"/>
+                <constraint firstItem="shF-sp-9b7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UeQ-S5-acu"/>
+            </constraints>
+            <point key="canvasLocation" x="-433" y="47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AppLaunch1" width="750" height="1624"/>
+    </resources>
+</document>

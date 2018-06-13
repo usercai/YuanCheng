@@ -1,0 +1,56 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'NetWorkClass' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+pod 'RxSwift', '~> 4.0.0'
+pod 'RxCocoa', '~> 4.0.0'
+pod 'Moya/RxSwift'
+pod 'Moya', '~> 10.0.0'
+#字典转模型
+pod 'ObjectMapper', '~> 3.0.0'
+#数据为空时
+pod 'DZNEmptyDataSet', '~> 1.8.1'
+
+pod 'RxDataSources', '~> 3.0.1'
+#输入框
+pod 'TextFieldEffects', '~> 1.4.0'
+  # Pods for NetWorkClass
+pod 'MJRefresh', '~> 3.1.15'
+
+pod 'TwicketSegmentedControl', '~> 0.1.2'
+#轮播图
+pod 'SDCycleScrollView', '~> 1.74'
+pod 'CVCalendar', '~> 1.6.0'
+
+pod 'Hue', '~> 3.0.0'
+
+pod 'JPush', '~> 3.0.7'
+#路径管理
+pod 'PathKit', '~> 0.8.0'
+pod 'ZFPlayer', '~> 2.1.5'
+
+#pod 'Realm', '~> 3.0.1'
+pod 'IQKeyboardManager', '~> 5.0.6'
+pod 'MBProgressHUD', '~> 1.0.0'
+pod 'NVActivityIndicatorView', '~> 4.0.0'
+
+#pod 'SnapKit', '~> 4.0.0'
+pod 'PageMenu', '~> 2.0.0'
+#图片选择
+pod 'ImagePicker', '~> 3.0.0'
+#图片浏览
+pod 'ImageViewer', '~> 5.0.0'
+  target 'NetWorkClassTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'NetWorkClassUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectRoleViewController" customModule="NetWorkClass" customModuleProvider="target">
+            <connections>
+                <outlet property="student" destination="byk-Vr-07Q" id="Oac-Iw-XBk"/>
+                <outlet property="teacher" destination="9hc-YY-kzB" id="8VN-5G-KQc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="604"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择您的角色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2g-1m-bWI">
+                    <rect key="frame" x="113.5" y="120" width="170.5" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="0.12118380516767502" green="0.37704363465309143" blue="0.63138043880462646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byk-Vr-07Q">
+                    <rect key="frame" x="20" y="204" width="161" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="byk-Vr-07Q" secondAttribute="height" multiplier="150:149" id="QAD-lg-kxt"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="login_studentLight"/>
+                    <state key="selected" backgroundImage="login_studentDeep"/>
+                    <connections>
+                        <action selector="student:" destination="-1" eventType="touchUpInside" id="1Xn-UB-qMZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hc-YY-kzB">
+                    <rect key="frame" x="216" y="204" width="161" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="9hc-YY-kzB" secondAttribute="height" multiplier="150:149" id="wCm-6i-zlO"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="login_teacherDeep"/>
+                    <state key="selected" backgroundImage="login_teacherLight"/>
+                    <connections>
+                        <action selector="teacher:" destination="-1" eventType="touchUpInside" id="zr5-ez-C94"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9hc-YY-kzB" firstAttribute="top" secondItem="byk-Vr-07Q" secondAttribute="top" id="1wQ-98-ADs"/>
+                <constraint firstItem="U2g-1m-bWI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="3Ok-8r-fdd"/>
+                <constraint firstItem="byk-Vr-07Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Kvt-yj-ibO"/>
+                <constraint firstItem="U2g-1m-bWI" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="PkA-it-981"/>
+                <constraint firstItem="9hc-YY-kzB" firstAttribute="width" secondItem="byk-Vr-07Q" secondAttribute="width" id="QP4-f0-am1"/>
+                <constraint firstItem="byk-Vr-07Q" firstAttribute="top" secondItem="U2g-1m-bWI" secondAttribute="bottom" constant="55" id="eSY-kf-AsS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9hc-YY-kzB" secondAttribute="trailing" constant="20" id="wcB-1g-F4E"/>
+                <constraint firstItem="9hc-YY-kzB" firstAttribute="leading" secondItem="byk-Vr-07Q" secondAttribute="trailing" constant="35" id="z8d-pA-kjd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-244" y="74"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_studentDeep" width="150" height="149"/>
+        <image name="login_studentLight" width="150" height="149"/>
+        <image name="login_teacherDeep" width="150" height="149"/>
+        <image name="login_teacherLight" width="150" height="149"/>
+    </resources>
+</document>

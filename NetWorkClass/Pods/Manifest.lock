@@ -1,0 +1,133 @@
+PODS:
+  - Alamofire (4.5.1)
+  - CVCalendar (1.6.0)
+  - Differentiator (3.0.1)
+  - DZNEmptyDataSet (1.8.1)
+  - Hue (3.0.0)
+  - ImagePicker (3.0.0)
+  - ImageViewer (5.0.0)
+  - IQKeyboardManager (5.0.6)
+  - JCore (1.1.6)
+  - JPush (3.0.7):
+    - JCore (~> 1.1.6)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.0.0)
+  - MJRefresh (3.1.15)
+  - Moya (10.0.0):
+    - Moya/Core (= 10.0.0)
+  - Moya/Core (10.0.0):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Moya/RxSwift (10.0.0):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - NVActivityIndicatorView (4.0.0):
+    - NVActivityIndicatorView/Presenter (= 4.0.0)
+  - NVActivityIndicatorView/Presenter (4.0.0)
+  - ObjectMapper (3.0.0)
+  - PageMenu (2.0.0)
+  - PathKit (0.8.0)
+  - Result (3.2.4)
+  - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.1):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.0.0)
+  - SDCycleScrollView (1.74):
+    - SDWebImage (>= 4.0.0)
+  - SDWebImage (4.2.1):
+    - SDWebImage/Core (= 4.2.1)
+  - SDWebImage/Core (4.2.1)
+  - TextFieldEffects (1.4.0)
+  - TwicketSegmentedControl (0.1.2)
+  - ZFPlayer (2.1.5):
+    - Masonry
+
+DEPENDENCIES:
+  - CVCalendar (~> 1.6.0)
+  - DZNEmptyDataSet (~> 1.8.1)
+  - Hue (~> 3.0.0)
+  - ImagePicker (~> 3.0.0)
+  - ImageViewer (~> 5.0.0)
+  - IQKeyboardManager (~> 5.0.6)
+  - JPush (~> 3.0.7)
+  - MBProgressHUD (~> 1.0.0)
+  - MJRefresh (~> 3.1.15)
+  - Moya (~> 10.0.0)
+  - Moya/RxSwift
+  - NVActivityIndicatorView (~> 4.0.0)
+  - ObjectMapper (~> 3.0.0)
+  - PageMenu (~> 2.0.0)
+  - PathKit (~> 0.8.0)
+  - RxCocoa (~> 4.0.0)
+  - RxDataSources (~> 3.0.1)
+  - RxSwift (~> 4.0.0)
+  - SDCycleScrollView (~> 1.74)
+  - TextFieldEffects (~> 1.4.0)
+  - TwicketSegmentedControl (~> 0.1.2)
+  - ZFPlayer (~> 2.1.5)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - CVCalendar
+    - Differentiator
+    - DZNEmptyDataSet
+    - Hue
+    - ImagePicker
+    - ImageViewer
+    - IQKeyboardManager
+    - JCore
+    - JPush
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - Moya
+    - NVActivityIndicatorView
+    - ObjectMapper
+    - PageMenu
+    - PathKit
+    - Result
+    - RxCocoa
+    - RxDataSources
+    - RxSwift
+    - SDCycleScrollView
+    - SDWebImage
+    - TextFieldEffects
+    - TwicketSegmentedControl
+    - ZFPlayer
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  CVCalendar: d6da92b579dfc1e0939e324dfffd2e1045cf69b1
+  Differentiator: ffe513ce1ea4e7198b89fac94d6e281c673055a9
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  Hue: b8fe1e43eef13631331eebecb2198b68e2622f95
+  ImagePicker: 973953c25960fe04729a7082a56194321c6762d2
+  ImageViewer: 3def6e39c6979ce3e9d001c78eec0d8b895f2f73
+  IQKeyboardManager: 077b7f691dfa9d69db9cff66f2bed68ebfc02d9b
+  JCore: 18fc8725124f26e55625eaf224659b3a999dcf63
+  JPush: 111b79b8a0169ab8fd4c486dac3ed166ed69293e
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJRefresh: 9af70f5f9327a2cf87f0fb5929f35fcc2fa638ea
+  Moya: adb58b0f4e58430db43cc6e2f6ebab1836501186
+  NVActivityIndicatorView: 54c9b93b6f25a4f467512680c0c90c09a1095cf2
+  ObjectMapper: 92230db59bf8f341a5c3a3cf0b9fbdde3cf0d87f
+  PageMenu: 9c38fd7e0d9ef4b1408320f55bb907bbc0e538dc
+  PathKit: dcab05d701474011aae0e40cf892298a831f63d6
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxDataSources: 098b7e62b6316313b14d6bf594e3f4f4f62a238a
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  SDCycleScrollView: f821215226f6146a35470721a9d6e83ec5cfb04b
+  SDWebImage: 1fa4c9edf525b744f002db89f3f5a38b3cd4c541
+  TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
+  TwicketSegmentedControl: 6d7a4cf243657e0ac3f00d06d873a25334c04042
+  ZFPlayer: 8a80bf8eb4638b97fbceaefcd3ca9978e9f17c9d
+
+PODFILE CHECKSUM: 4ba65172c9f1f8330743f463eac2a1c3944d9bf0
+
+COCOAPODS: 1.5.0

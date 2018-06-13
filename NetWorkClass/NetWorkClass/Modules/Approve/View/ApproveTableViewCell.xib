@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="196" id="KGk-i7-Jjw" customClass="ApproveTableViewCell" customModule="NetWorkClass" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="289" height="196"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="289" height="195.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="很长很长很长很长很长很长" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1i-qs-BvW">
+                        <rect key="frame" x="75" y="79.5" width="119" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gga-1x-2lv">
+                        <rect key="frame" x="75" y="101.5" width="188" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20140404" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkh-wp-aGC">
+                        <rect key="frame" x="204" y="81" width="59" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qX2-xu-ktc">
+                        <rect key="frame" x="15" y="73" width="50" height="50"/>
+                        <color key="backgroundColor" red="0.12118380519999999" green="0.37704363470000002" blue="0.63138043880000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="pHL-9G-oRs"/>
+                            <constraint firstAttribute="width" constant="50" id="uW0-aT-N9V"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.9999235272" green="1" blue="0.99988299609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gga-1x-2lv" firstAttribute="leading" secondItem="m1i-qs-BvW" secondAttribute="leading" id="954-gw-dO8"/>
+                    <constraint firstItem="gga-1x-2lv" firstAttribute="top" secondItem="m1i-qs-BvW" secondAttribute="bottom" constant="5" id="AKB-YD-TsV"/>
+                    <constraint firstItem="qX2-xu-ktc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CcC-ZG-Pfx"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="bkh-wp-aGC" secondAttribute="trailing" constant="10" id="Mv1-Cc-u0x"/>
+                    <constraint firstItem="gga-1x-2lv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="11" id="Ree-r6-BNq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gga-1x-2lv" secondAttribute="trailing" constant="10" id="aJs-n3-gX7"/>
+                    <constraint firstItem="m1i-qs-BvW" firstAttribute="leading" secondItem="qX2-xu-ktc" secondAttribute="trailing" constant="10" id="aoN-0h-5zz"/>
+                    <constraint firstItem="bkh-wp-aGC" firstAttribute="centerY" secondItem="m1i-qs-BvW" secondAttribute="centerY" id="gQC-dn-KD5"/>
+                    <constraint firstItem="qX2-xu-ktc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="iRh-hq-uQm"/>
+                    <constraint firstItem="bkh-wp-aGC" firstAttribute="leading" secondItem="m1i-qs-BvW" secondAttribute="trailing" constant="10" id="qs9-dK-NFZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="aptitle" destination="m1i-qs-BvW" id="VSW-f4-EKd"/>
+                <outlet property="info" destination="gga-1x-2lv" id="mbj-Hk-kVL"/>
+                <outlet property="name" destination="qX2-xu-ktc" id="IYN-eS-HbK"/>
+                <outlet property="time" destination="bkh-wp-aGC" id="fG2-WP-aeQ"/>
+            </connections>
+            <point key="canvasLocation" x="-243" y="70"/>
+        </tableViewCell>
+    </objects>
+</document>
