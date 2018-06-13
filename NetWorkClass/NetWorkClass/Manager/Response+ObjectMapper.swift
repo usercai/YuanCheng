@@ -112,8 +112,8 @@ extension Response {
             if let json = try mapJSON() as? [String:Any]{
                 
                 let msgStr = json["msg"] as? String
-                print(json)
-                print(response?.url)
+//                print(json)
+//                print(response?.url)
                 if let code = json["msgCode"] as? Int {
                     
                     if code == 1{
