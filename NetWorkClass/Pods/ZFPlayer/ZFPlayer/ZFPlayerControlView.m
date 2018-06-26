@@ -29,10 +29,6 @@
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored"-Wdeprecated-declarations"
-#define kWidth [[UIScreen mainScreen] bounds].size.width
-#define kHeight [[UIScreen mainScreen] bounds].size.height
-#define SafeAreaBottomHeight (kHeight == 812.0 ? 34 : 0)
-#define isPhoneX (kHeight == 812.0 ? YES : NO)
 
 static const CGFloat ZFPlayerAnimationTimeInterval             = 7.0f;
 static const CGFloat ZFPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
@@ -177,13 +173,12 @@ static const CGFloat ZFPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
     }];
     
     [self.topImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.trailing.equalTo(self).offset(0);
+        make.leading.trailing.equalTo(self);
         make.top.equalTo(self.mas_top).offset(0);
         make.height.mas_equalTo(50);
     }];
     
     [self.backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        
         make.leading.equalTo(self.topImageView.mas_leading).offset(10);
         make.top.equalTo(self.topImageView.mas_top).offset(3);
         make.width.height.mas_equalTo(40);
@@ -252,7 +247,7 @@ static const CGFloat ZFPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
     }];
     
     [self.lockBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.equalTo(self.mas_leading).offset(15);
+        make.leading.equalTo(self.mas_leading).offset(iPhoneX?35:15);
         make.centerY.equalTo(self.mas_centerY);
         make.width.height.mas_equalTo(32);
     }];
@@ -491,8 +486,6 @@ static const CGFloat ZFPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
     if (ZFPlayerShared.isLockScreen) { return; }
     self.lockBtn.hidden         = !self.isFullScreen;
     self.fullScreenBtn.selected = self.isFullScreen;
-
-    
     UIDeviceOrientation orientation = [UIDevice currentDevice].orientation;
     if (orientation == UIDeviceOrientationFaceUp || orientation == UIDeviceOrientationFaceDown || orientation == UIDeviceOrientationUnknown || orientation == UIDeviceOrientationPortraitUpsideDown) { return; }
     if (!self.isShrink && !self.isPlayEnd && !self.showing) {
@@ -501,9 +494,6 @@ static const CGFloat ZFPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
     }
 }
 
-/**
- 横屏约束
- */
 - (void)setOrientationLandscapeConstraint {
     if (self.isCellVideo) {
         self.shrink             = NO;
@@ -511,15 +501,12 @@ static const CGFloat ZFPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
     self.fullScreen             = YES;
     self.lockBtn.hidden         = !self.isFullScreen;
     self.fullScreenBtn.selected = self.isFullScreen;
-    CGFloat lead = isPhoneX ? 50 : 10;
-    
     [self.backBtn setImage:ZFPlayerImage(@"ZFPlayer_back_full") forState:UIControlStateNormal];
     [self.backBtn mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.topImageView.mas_top).offset(13);
-        make.leading.equalTo(self.topImageView.mas_leading).offset(lead);
+        make.top.equalTo(self.topImageView.mas_top).offset(23);
+        make.leading.equalTo(self.topImageView.mas_leading).offset(10);
         make.width.height.mas_equalTo(40);
     }];
-
 }
 /**
  *  设置竖屏的约束
@@ -528,7 +515,6 @@ static const CGFloat ZFPlayerControlBarAutoFadeOutTimeInterval = 0.35f;
     self.fullScreen             = NO;
     self.lockBtn.hidden         = !self.isFullScreen;
     self.fullScreenBtn.selected = self.isFullScreen;
-    
     [self.backBtn mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.topImageView.mas_top).offset(3);
         make.leading.equalTo(self.topImageView.mas_leading).offset(10);

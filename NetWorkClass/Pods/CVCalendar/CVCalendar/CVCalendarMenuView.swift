@@ -20,7 +20,8 @@ public final class CVCalendarMenuView: UIView {
     public var dayOfWeekTextUppercase: Bool? = true
     public var dayOfWeekFont: UIFont? = UIFont(name: "Avenir", size: 10)
     public var weekdaySymbolType: WeekdaySymbolType? = .short
-
+    public var calendar: Calendar? = Calendar.current
+    
     @IBOutlet public weak var menuViewDelegate: AnyObject? {
         set {
             if let delegate = newValue as? MenuViewDelegate {
@@ -65,16 +66,17 @@ public final class CVCalendarMenuView: UIView {
     }
 
     public func setupWeekdaySymbols() {
-        var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
-        (calendar as NSCalendar).components([NSCalendar.Unit.month, NSCalendar.Unit.day], from: Foundation.Date())
-        calendar.firstWeekday = firstWeekday!.rawValue
-
-        symbols = calendar.weekdaySymbols
+        if var calendar = self.calendar {
+            (calendar as NSCalendar).components([NSCalendar.Unit.month, NSCalendar.Unit.day], from: Foundation.Date())
+            calendar.firstWeekday = firstWeekday!.rawValue
+            symbols = calendar.weekdaySymbols
+        }
     }
 
     public func createDaySymbols() {
         // Change symbols with their places if needed.
         let dateFormatter = DateFormatter()
+        dateFormatter.locale = calendar?.locale ?? Locale.current
         var weekdays: NSArray
 
         switch weekdaySymbolType! {
@@ -82,7 +84,6 @@ public final class CVCalendarMenuView: UIView {
             weekdays = dateFormatter.weekdaySymbols as NSArray
         case .short:
             weekdays = dateFormatter.shortWeekdaySymbols as NSArray
-
         case .veryShort:
             weekdays = dateFormatter.veryShortWeekdaySymbols as NSArray
         }
@@ -95,9 +96,9 @@ public final class CVCalendarMenuView: UIView {
             weekdays = weekdays.addingObjects(
                 from: copy.subarray(with: NSRange(location: 0, length: firstWeekdayIndex))) as NSArray
         }
-        
+
         self.symbols = weekdays as! [String]
-        
+
         // Add symbols.
         self.symbolViews = [UILabel]()
         let space = 0 as CGFloat

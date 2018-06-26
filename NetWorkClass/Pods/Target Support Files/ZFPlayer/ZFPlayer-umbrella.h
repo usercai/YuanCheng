@@ -12,10 +12,7 @@
 
 #import "ASValuePopUpView.h"
 #import "ASValueTrackingSlider.h"
-#import "UIAlertController+ZFPlayerRotation.h"
 #import "UIImageView+ZFCache.h"
-#import "UINavigationController+ZFPlayerRotation.h"
-#import "UITabBarController+ZFPlayerRotation.h"
 #import "UIView+CustomControlView.h"
 #import "UIViewController+ZFPlayerRotation.h"
 #import "UIWindow+CurrentViewController.h"
